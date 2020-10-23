@@ -1,25 +1,52 @@
-import projects #projects definitions are placed in different file
+#basic menu; prompts reader to select a math calculator
+print("")
+print("Select Operation.")
+print("")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+print("5.Exponent")
+print("6.Square Root")
+print("7.Sine")
+print("8.Cosine")
+print("9.Tangent")
+print("")
 
-# https://flask.palletsprojects.com/en/1.1.x/api/
-from flask import Flask, render_template
-#create a Flask instance
-app = Flask(__name__)
+choice = input("Select Operation: ")
+#importing the different files for the calculator
+if choice == "1":
+  from Scientific_Calculator import Addition
+  Addition.Sum()
 
-#connects default URL of server to render home.html
-@app.route('/')
-def home_route():
-    return render_template("home.html", projects=projects.setup())
+if choice == "2":
+  from Scientific_Calculator import Subtraction
+  Subtraction.Subraction()
 
-#connects /hello path of server to render hello.html
-@app.route('/fundamentals/')
-def hello_route():
-    return render_template("fundamentals.html", projects=projects.setup())
+if choice == "3":
+  from Scientific_Calculator import Multiplication
+  Multiplication.multiply()
 
-#connects /flask path of server to render flask.html
-@app.route('/calculator/')
-def flask_route():
-    return render_template("calculator.html", projects=projects.setup())
+if choice == "4":
+  from Scientific_Calculator import Division
+  Division.Divide()
 
-if __name__ == "__main__":
-    #runs the application on the repl development server
-    app.run(port='3000', host='0.0.0.0')
+if choice == "5":
+  from Scientific_Calculator import Exponent
+  Exponent.Exponent()
+
+if choice == "6":
+  from Scientific_Calculator import sqrt
+  sqrt.sqrt()
+
+if choice == "7":
+  from Scientific_Calculator import Sine
+  Sine.sine()
+
+if choice == "8":
+  from Scientific_Calculator import Cosine
+  Cosine.cosine()
+
+if choice == "9":
+  from Scientific_Calculator import Tangent
+  Tangent.tangent()
