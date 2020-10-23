@@ -10,5 +10,5 @@ Welcome to our portfolio! Here you can find quick access to all our important ac
 * With our second project, we have a better idea of what we want to deliver. We strive to build a website using HTML and JavaScript as the frontend and Python as the backend to display a series of intuitive and easy to use calculators for various applications of math.
 * Click on the Github Repository to view our commits and the final product which is currently under development.
 * Click on the Project Padlet to view our initial thoughts on the project and our plans for what we may be including in this project. This project is currently under development so there may be minor discrpancies with the padlet. Stay tuned!
-#Links
+# Links
 * https://repl.it/@PragadeeshRaj/Web-Portfolio-V3#main.py
