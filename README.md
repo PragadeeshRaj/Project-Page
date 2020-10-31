@@ -1,5 +1,13 @@
 # P2 - Einsteins Portfolio
 Welcome to our portfolio! Here you can find quick access to all our important achievements throughout Advanced Placement Computer Science Principles.
+## Git Instructions
+* You can learn about running this project on your IDE in this section:
+* Go to Code home and click on the green "Code" button.
+* Click on the clipboard next to the Git url. 
+* Open up your IntelliJ and click "Run from Version Control".
+* Press "Ctrl + V" or "⌘ + V" and press the blue "Clone" button at the bottom.
+* Once the project is opened up, be sure to change the interpreter to Python 3.8 or above. 
+* Run the project from main.py and you're all set!
 ## Python Fundamentals
 * Our learning begins with our very first project, "Python Fundamentals". In this project we learned lots about strings, variables, assignments, iterations, and much more fundamental pieces of Python. 
 * As we built our understanding of this language, we were able to develop very creative and powerful programs.
