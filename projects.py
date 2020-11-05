@@ -3,8 +3,10 @@ def setup():
     github = "https://github.com/PragadeeshRaj/Raj-Academy"
     Journal1 = "https://docs.google.com/document/d/1BR_-NL6OLtSCz8bhTDnt8godFyw9MgyHKEk1I2nx174/edit?usp=sharing"
     Journal2 = "https://docs.google.com/document/d/18v-SvlNMZ4gJS6WdWzy4DUILUiVfrN0_a1so8DVnq90/edit"
+    Padlet1 = "https://padlet.com/pragadeesh3000/8d4vpki73p0z4eac"
+    Padlet2 = "https://padlet.com/pragadeesh3000/zg8kksq513p2dpsl"
     # dictionary of sources for our various information that will be routed through base.html
-    source = {"name": name, "github": github, "Journal1": Journal1, "Journal2": Journal2}
+    source = {"name": name, "github": github, "Journal1": Journal1, "Journal2": Journal2, "Padlet1": Padlet1, "Padlet2": Padlet2}
 
     # fundamentals links formatted under a list
     project1 = "Python Fundamentals"
