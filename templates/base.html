@@ -34,6 +34,7 @@
           <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
           <a class="nav-link" href="/fundamentals/">Python Fundamentals Project</a>
           <a class="nav-link" href="/calculator/">Calculator Project</a>
+          <a class="nav-link" href="/videos/">Individual Videos</a>
         </div>
       </div>
     </nav>
@@ -81,21 +82,21 @@
   </body>
 
   {% block script %}
-  <script src="https://threejs.org/build/three.js"></script>
-    <script src="{{ url_for('static', filename='vanta.waves.min.js') }}"></script>
-    <script>
-    VANTA.WAVES({
-      el: "body",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 800.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      wingSpan: 40.0
-    })
-  </script>
+      <script src="https://threejs.org/build/three.js"></script>
+      <script src="{{ url_for('static', filename='vanta.waves.min.js') }}"></script>
+      <script>
+        VANTA.WAVES({
+          el: "body",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 800.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          wingSpan: 40.0
+        })
+      </script>
   {% endblock %}
 
   {% block style %}

@@ -11,14 +11,19 @@ def home_route():
 
 
 @app.route('/fundamentals/')
-def hello_route():
+def fundamental_route():
     return render_template("fundamentals.html", projects=projects.setup())
     # decoration passed through render_template of the setup in respective html file.
 
 
 @app.route('/calculator/')
-def flask_route():
+def calculator_route():
     return render_template("calculator.html", projects=projects.setup())
+
+
+@app.route('/videos/')
+def video_route():
+    return render_template("videos.html", projects=projects.setup())
 
 
 if __name__ == "__main__":
