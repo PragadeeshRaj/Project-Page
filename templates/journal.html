@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>{{name}} | Journals </title>
+{% endblock %}
+
+{% block title %}
+<h1>Our Journals</h1>
+<h2>Ayman Kazi, Pragadeesh Raj, Brandon Truong's Journal</h2>
+<iframe height="500px" width="100%" align="left" src= {{Journal1}} scrolling="yes" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<h3>Ali Saad & Navodit Maheshwari's Journal</h3>
+<iframe height="500px" width="100%" align="right" src= {{Journal2}} scrolling="yes" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+{% endblock %}
+
+{% block script %}
+<script src="https://threejs.org/build/three.js"></script>
+<script src="{{ url_for('static', filename='vanta.waves.min.js') }}"></script>
+<script>
+
+    VANTA.WAVES({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 800.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      wingSpan: 40.0
+    })
+    </script>
+{% endblock %}
+
