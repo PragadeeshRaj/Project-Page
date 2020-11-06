@@ -25,18 +25,39 @@
   <body>
     <!-- Navigation Bar  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">{{name}}</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-link" href="/fundamentals/">Python Fundamentals Project</a>
-          <a class="nav-link" href="/calculator/">Calculator Project</a>
-          <a class="nav-link" href="/videos/">Individual Videos</a>
+        <a class="navbar-brand" href="/">{{name}}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/fundamentals/">Python Fundamentals Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/calculator/">Calculator Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/journal/">Our Journals</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/pragadeesh/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/ayman/">Ayman</a>
+                        <a class="dropdown-item" href="/pragadeesh/">Pragadeesh</a>
+                        <a class="dropdown-item" href="/brandon/">Brandon</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/ali/">Ali</a>
+                        <a class="dropdown-item" href="/navodit/">Navodit</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </div>
     </nav>
     <div class="container-fluid">
           <div class="row justify-content-end" style="padding-top: 2%; padding-bottom: 2%; padding: 2%;">
