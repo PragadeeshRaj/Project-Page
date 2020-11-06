@@ -25,6 +25,9 @@ def calculator_route():
 def video_route():
     return render_template("videos.html", projects=projects.setup())
 
+@app.route('/journal/')
+def Journal_route():
+    return render_template("journal.html", projects=projects.setup())
 
 if __name__ == "__main__":
     app.run(port='5000', host='127.0.0.1')
